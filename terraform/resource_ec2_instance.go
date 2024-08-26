@@ -67,8 +67,6 @@ func resourceEC2InstanceCreate(d *schema.ResourceData, m interface{}) error {
     return resourceEC2InstanceRead(d, m)
 }
 
-
-
 func resourceEC2InstanceRead(d *schema.ResourceData, m interface{}) error {
     // Load the default AWS configuration
     cfg, err := config.LoadDefaultConfig(context.TODO(), config.WithRegion("us-west-2"))
